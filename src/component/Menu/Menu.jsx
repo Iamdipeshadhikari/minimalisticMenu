@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import style from "./Menu.module.scss";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import ClickSound from "../../assets/clickSound.mp3";
+import useSound from "use-sound";
 
 // icons
 import MainLogo from "../../assets/logo.png";
@@ -38,11 +40,11 @@ const Menu = () => {
   // null, menuFirst, menuSecond
   const [menuToggle1, setMenuToggle1] = useState(false);
   const [menuToggle2, setMenuToggle2] = useState(false);
-
-  console.log(menuToggle1, menuToggle2);
+  const [play] = useSound(ClickSound, { volume: 1 });
 
   const toggleMenu = () => {
     setMenuToggle1(true);
+    play();
 
     if (menuToggle1) {
       setMenuToggle2(true);

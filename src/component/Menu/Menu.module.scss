@@ -44,7 +44,7 @@
 // positioning
 .MenuFirstRow a:nth-child(1) {
   top: 2rem;
-  left: 6.5rem;
+  left: 7rem;
 
   img {
     height: 1.4rem;
@@ -88,7 +88,7 @@
   transform: scale(0.2);
   background-color: rgba(#999, 0);
   opacity: 0;
-  z-index: 1;
+  z-index: 2;
   transition: all 0.8s;
   transition-timing-function: cubic-bezier(0, 0.69, 0.79, 0.89);
 
