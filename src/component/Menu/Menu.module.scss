@@ -1,3 +1,29 @@
+// keyframes
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.rotating {
+  -webkit-animation: rotating 60s linear infinite;
+  -moz-animation: rotating 60s linear infinite;
+  -ms-animation: rotating 60s linear infinite;
+  -o-animation: rotating 60s linear infinite;
+  animation: rotating 60s linear infinite;
+}
+
 .MenuContainer {
   position: relative;
   height: 100vh;
@@ -100,6 +126,7 @@
     height: 2.5rem;
   }
 }
+
 .MenuSecondRow__Active {
   transform: scale(1);
   opacity: 1;
@@ -220,5 +247,178 @@
 
   img {
     height: 2.8rem;
+  }
+}
+
+// Mobile Responsive
+@media only screen and (max-width: 768px) {
+  .Logo {
+    img {
+      width: 2.5rem;
+    }
+  }
+  .MenuFirstRow {
+    height: 12rem;
+    width: 12rem;
+  }
+  // positioning
+  .MenuFirstRow a:nth-child(1) {
+    top: 1rem;
+    left: 3rem;
+
+    img {
+      height: 1.4rem;
+    }
+  }
+  .MenuFirstRow a:nth-child(2) {
+    top: 4.5rem;
+    right: 0rem;
+
+    img {
+      height: 2.5rem;
+    }
+  }
+  .MenuFirstRow a:nth-child(3) {
+    bottom: 0rem;
+    left: 5.2rem;
+
+    img {
+      height: 2.5rem;
+    }
+  }
+  .MenuFirstRow a:nth-child(4) {
+    top: 4.5rem;
+    left: 0rem;
+
+    img {
+      height: 2.5rem;
+    }
+  }
+
+  .MenuSecondRow {
+    height: 22rem;
+    width: 22rem;
+
+    img {
+      height: 1.5rem;
+    }
+  }
+
+  // positioning
+  .MenuSecondRow a:nth-child(1) {
+    top: 8rem;
+    left: 0.8rem;
+  }
+  .MenuSecondRow a:nth-child(2) {
+    top: 5.5rem;
+    left: 1.5rem;
+  }
+  .MenuSecondRow a:nth-child(3) {
+    top: 3.4rem;
+    left: 3.2rem;
+  }
+  .MenuSecondRow a:nth-child(4) {
+    top: 2rem;
+    left: 4.5rem;
+  }
+  .MenuSecondRow a:nth-child(5) {
+    top: 0.8rem;
+    left: 6.5rem;
+  }
+  .MenuSecondRow a:nth-child(6) {
+    top: 0.4rem;
+    left: 8.8rem;
+  }
+  .MenuSecondRow a:nth-child(7) {
+    top: 0.5rem;
+    left: 12rem;
+  }
+  .MenuSecondRow a:nth-child(8) {
+    top: 1.3rem;
+    left: 14.5rem;
+  }
+  .MenuSecondRow a:nth-child(9) {
+    top: 2.8rem;
+    left: 17.2rem;
+  }
+  .MenuSecondRow a:nth-child(10) {
+    top: 4.5rem;
+    left: 18.5rem;
+  }
+  .MenuSecondRow a:nth-child(11) {
+    top: 6.5rem;
+    left: 20rem;
+
+    img {
+      height: 2.6rem;
+    }
+  }
+  .MenuSecondRow a:nth-child(12) {
+    top: 9.8rem;
+    left: 20.2rem;
+  }
+  .MenuSecondRow a:nth-child(13) {
+    top: 12rem;
+    left: 20rem;
+  }
+  .MenuSecondRow a:nth-child(14) {
+    top: 14.5rem;
+    left: 19.2rem;
+  }
+  .MenuSecondRow a:nth-child(15) {
+    top: 16.5rem;
+    left: 17.7rem;
+  }
+  .MenuSecondRow a:nth-child(16) {
+    top: 18.2rem;
+    left: 15.7rem;
+  }
+  .MenuSecondRow a:nth-child(17) {
+    top: 19.3rem;
+    left: 13.5rem;
+
+    img {
+      height: 2rem;
+    }
+  }
+  .MenuSecondRow a:nth-child(18) {
+    top: 20rem;
+    left: 11.5rem;
+  }
+  .MenuSecondRow a:nth-child(19) {
+    top: 20.5rem;
+    left: 8.2rem;
+
+    img {
+      height: 1rem;
+    }
+  }
+  .MenuSecondRow a:nth-child(20) {
+    top: 19.3rem;
+    left: 6rem;
+  }
+  .MenuSecondRow a:nth-child(21) {
+    top: 16.7rem;
+    left: 4rem;
+
+    img {
+      height: 2.5rem;
+    }
+  }
+  .MenuSecondRow a:nth-child(22) {
+    top: 15.5rem;
+    left: 2rem;
+  }
+  .MenuSecondRow a:nth-child(23) {
+    top: 13.2rem;
+    left: 1rem;
+  }
+  .MenuSecondRow a:nth-child(24) {
+    top: 10.7rem;
+    left: 0.2rem;
+
+    img {
+      height: 2rem;
+    }
   }
 }

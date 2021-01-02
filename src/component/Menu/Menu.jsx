@@ -93,7 +93,7 @@ const Menu = () => {
       <div
         className={`${style.MenuSecondRow} ${
           menuToggle2 ? style.MenuSecondRow__Active : null
-        }`}
+        } ${menuToggle2 ? style.rotating : null}`}
       >
         <Link>
           <img src={ThirdOneIcon} alt="Logo Name" />
