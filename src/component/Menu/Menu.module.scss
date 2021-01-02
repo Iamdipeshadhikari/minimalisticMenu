@@ -15,13 +15,9 @@
     transform: rotate(360deg);
   }
 }
-
 .rotating {
-  -webkit-animation: rotating 60s linear infinite;
-  -moz-animation: rotating 60s linear infinite;
-  -ms-animation: rotating 60s linear infinite;
-  -o-animation: rotating 60s linear infinite;
   animation: rotating 60s linear infinite;
+  animation-delay: 1s;
 }
 
 .MenuContainer {
@@ -115,7 +111,7 @@
   background-color: rgba(#999, 0);
   opacity: 0;
   z-index: 2;
-  transition: all 0.8s;
+  transition: transform 0.8s;
   transition-timing-function: cubic-bezier(0, 0.69, 0.79, 0.89);
 
   a {
